@@ -4,7 +4,6 @@ general personal website
 
 ## Technologies Used:
 * HTML5/SCSS
-* JavaScript/jQuery
 * Bootstrap
 * GitHub Pages
 
