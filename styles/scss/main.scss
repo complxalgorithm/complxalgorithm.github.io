@@ -1,0 +1,206 @@
+// Style: main
+// Author: Stephen C Sanders <https://stephensanders.me>
+// License: MIT
+
+@import "../assets/_variables";
+
+#body {
+    overflow-x: hidden;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $header-font;    
+    }
+    
+    p {
+        font-family: $main-font;    
+    }
+    
+    .seo-icon {
+        display: none;   
+    }
+    
+    /* START SOCIAL ICONS STYLES */
+    .btn-stackoverflow {
+        background-color: #F48024 !important;
+        color: white !important;
+        
+        &:hover {
+            background-color: white !important;
+            color: #F48024 !important;
+            border-color: white !important;    
+        }
+    }
+    
+    .btn-vsco {
+        background-color: white !important;
+        
+        &:hover {
+            color: white !important;
+            background-color: #696969 !important;
+            border-color: #696969 !important;
+        }
+    }
+    /* END SOCIAL ICONS STYLES */
+}
+
+// DROPDOWN MENU STYLES
+#drop {
+    float: left;    
+}
+
+// GENERAL SECTION STYLES
+.part {
+    padding: 25px 0;
+    
+    .sec-header {
+        text-align: center;
+        padding-bottom: 25px;
+        color: $tertiary-color;
+    }
+}
+
+// MAIN SECTION STYLES
+.main {
+    background-image: url(../assets/img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    .container {
+        .row {
+            justify-content: center;
+            
+            .main-info {
+                position: relative;
+                top: 55%;
+                transform: translateY(55%);
+                
+                h1 {
+                    font-size: 55px !important;
+                    color: $primary-color;
+                }
+                
+                h3 {
+                    font-size: 22px !important;
+                    color: $tertiary-color;
+                }
+                
+                // nav
+                .nav-row {
+                    width: 100%;
+                    padding: 25px 0;
+                    
+                    .nav-pills {
+                        margin: 0 auto;
+                        
+                        > li {
+                            float: none !important;
+                            display: inline-block !important;
+                            padding: 0 5px;
+                            
+                            > a {
+                                color: $secondary-color;
+                                background-color: white !important;
+                                font-size: 18px !important;
+                                font-weight: bold;
+                                font-family: $main-font;
+                                
+                                &:hover {
+                                    color: white;
+                                    background-color: $secondary-color !important;
+                                    text-decoration: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .social-icons {
+                    padding: 15px 0;
+                    
+                    .btn-social-icon {
+                        margin: 0 7.5px;
+                        
+                        svg {
+                            margin-top: 5px;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ABOUT SECTION STYLES
+.about-section {
+    .col-md-6 {
+        .about-img {
+            text-align: center;    
+        }
+        
+        .about-text {
+            margin-top: 25px;
+            
+            p {
+                line-height: 1.5;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// PROJECTS SECTION STYLES
+.projects-section {
+    background-color: $primary-color;
+    
+    .col-md-4 {
+        padding: 0 !important;
+        
+        .project {
+            margin: 7.5px 5px;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 2.5px 2.5px black;
+            
+            .project-img {
+                img.proj-img {
+                    width: 100%;
+                    border-bottom: 1px solid black;
+                }
+            }
+            
+            .project-info {
+                margin: 15px;
+                text-align: center;
+                
+                .project-title {
+                    h3 {
+                        
+                    }
+                }
+            
+                .project-years {
+                    h5 {
+                        
+                    }
+                }
+            
+                .project-description {
+                    .proj-info {
+                        margin: 0 !important;    
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER SECTION STYLES
+.footer-section {
+    padding: 20px 0;
+    
+    p {
+        text-align: center;
+        color: $secondary-color;
+    }
+}
