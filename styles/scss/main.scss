@@ -66,6 +66,10 @@
     background-repeat: no-repeat;
     height: 100vh;
     
+    @media screen and (max-width: 375px) {
+        height: 667px !important;    
+    }
+    
     .container {
         .row {
             justify-content: center;
