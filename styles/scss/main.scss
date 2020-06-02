@@ -50,11 +50,12 @@
 
 // GENERAL SECTION STYLES
 .part {
-    padding: 25px 0;
+    padding: 45px 0;
     
     .sec-header {
         text-align: center;
         padding-bottom: 25px;
+        margin-top: 0 !important;
         color: $tertiary-color;
     }
 }
@@ -189,7 +190,7 @@
             }
             
             .project-info {
-                margin: 15px;
+                margin: 15px 7.5px;
                 text-align: center;
                 
                 .project-title {
