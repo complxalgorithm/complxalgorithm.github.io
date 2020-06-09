@@ -7,6 +7,11 @@
 #body {
     overflow-x: hidden;
     
+    .container {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    
     h1, h2, h3, h4, h5, h6 {
         font-family: $header-font;    
     }
@@ -249,5 +254,43 @@
 @media screen and (max-width: 605px) {
     .nav-pills > li {
         padding: 2.5px 0 !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {  // styles for larger monitors
+    .main-info {
+        top: 75% !important;
+        transform: translateY(75%) !important;
+        
+        h1 {
+            font-size: 75px;    
+        }
+        
+        h3 {
+            font-size: 30px;    
+        }
+    }
+    
+    .part {
+        padding: 60px !important;
+        
+        .sec-header {
+            font-size: 35px;
+            padding-bottom: 30px;
+        }
+    }
+    
+    .about-text {
+        margin-top: 5px;
+        
+        p {
+            line-height: 1.75 !important;;    
+        }
+    }
+    
+    .projects-section {
+        .container {
+            width: 1250px !important;    
+        }
     }
 }
