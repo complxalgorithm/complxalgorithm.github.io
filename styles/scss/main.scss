@@ -4,9 +4,9 @@
 
 @import "../assets/_variables";
 
-#body {
-    overflow-x: hidden;
-    
+html, body { overflow: hidden !important; } // remove horizontal scrolling
+
+body {
     .container {
         padding-right: 0 !important;
         padding-left: 0 !important;
