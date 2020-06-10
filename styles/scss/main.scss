@@ -257,6 +257,24 @@
     }
 }
 
+@media screen and (max-width: 794px) {
+    .about-section {
+        img {
+            width: 85%;    
+        }
+        
+        .about-text {
+            padding: 0 10px;    
+        }
+    }
+    
+    .projects-section {
+        .col-md-4 {
+            padding: 0 15px !important;    
+        }
+    }
+}
+
 @media screen and (min-width: 1500px) {  // styles for larger monitors
     .main-info {
         top: 75% !important;
