@@ -4,7 +4,7 @@
 
 @import "../assets/_variables";
 
-html, body { overflow: hidden !important; } // remove horizontal scrolling
+html, body { overflow-x: hidden !important; } // remove horizontal scrolling
 
 body {
     .container {
