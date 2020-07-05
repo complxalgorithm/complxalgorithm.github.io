@@ -4,6 +4,24 @@
 
 @import "../assets/_variables";
 
+// MIXINS
+@mixin background-img($image, $height) {
+    background: {
+        image: $image;
+        repeat: no-repeat;
+        position: center;
+    }
+    
+    height: $height;
+}
+
+@mixin transform-y($percent) {
+    top: $percent;
+    transform: translateY($percent);
+}
+
+
+// GENERAL LAYOUT STYLES
 html, body { overflow-x: hidden !important; } // remove horizontal scrolling
 
 body {
@@ -26,6 +44,17 @@ body {
     
     .seo-icon {
         display: none;   
+    }
+    
+    .btn-primary {
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+        
+        &:hover {
+            background-color: $tertiary-color;
+            border-color: $tertiary-color;
+            transition: 0.5s;
+        }
     }
     
     /* START SOCIAL ICONS STYLES */
@@ -66,10 +95,7 @@ body {
 
 // MAIN SECTION STYLES
 .main {
-    background-image: url(../assets/img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    @include background-img(url(../assets/img/background.jpg), 100vh);
     
     @media screen and (max-width: 375px) {
         height: 667px !important;    
@@ -81,8 +107,7 @@ body {
             
             .main-info {
                 position: relative;
-                top: 55%;
-                transform: translateY(55%);
+                @include transform-y(55%);
                 
                 @media screen and (max-width: 440px) {
                     top: 30% !important;
@@ -218,6 +243,41 @@ body {
                     .proj-info {
                         margin: 0 !important;    
                     }
+                }
+            }
+        }
+    }
+}
+
+// CTA SECTION STYLES
+.cta-section {
+    @include background-img(url(../assets/img/cta.jpg), 600px);
+    
+    .cta-wrapper {
+        text-align: center; 
+    
+        .cta-info {
+            background-color: white;
+            opacity: 0.75;
+            border-radius: 25px;
+            width: 50%;
+            display: inline-block;
+            padding: 10px;
+            @include transform-y(25%);
+        
+            h2 {
+                font-size: 35px;
+                color: $primary-color;
+                padding-bottom: 15px;
+            }
+        
+            p {
+                font-size: 25px;
+                color: black;
+                padding-bottom: 15px;
+            
+                a {
+                    font-size: 25px;    
                 }
             }
         }
