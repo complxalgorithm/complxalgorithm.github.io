@@ -5,7 +5,7 @@
 @import "../assets/_variables";
 
 // MIXINS
-@mixin background-img($image, $height) {
+@mixin background-img($image, $height) {    // bg imgs - main and cta sections
     background: {
         image: $image;
         repeat: no-repeat;
@@ -15,9 +15,10 @@
     height: $height;
 }
 
-@mixin transform-y($percent) {
+@mixin transform-y($percent, $width) {  // for positioning text - main and cta sections
     top: $percent;
     transform: translateY($percent);
+    width: $width;  // for width of info div
 }
 
 
@@ -107,7 +108,7 @@ body {
             
             .main-info {
                 position: relative;
-                @include transform-y(55%);
+                @include transform-y(55%, auto);
                 
                 @media screen and (max-width: 440px) {
                     top: 30% !important;
@@ -247,6 +248,12 @@ body {
             }
         }
     }
+    
+    .proj-disclaim {
+        @media screen and (max-width: 794px) {
+            margin: 0 15px;    
+        }
+    }
 }
 
 // CTA SECTION STYLES
@@ -260,10 +267,17 @@ body {
             background-color: white;
             opacity: 0.75;
             border-radius: 25px;
-            width: 50%;
             display: inline-block;
             padding: 10px;
-            @include transform-y(25%);
+            @include transform-y(25%, 50%);
+            
+            @media screen and (max-width: 599px) {
+                @include transform-y(10%, 85%);    
+            }
+            
+            @media screen and (min-width: 600px) and (max-width: 991px) {
+                @include transform-y(15%, 85%);    
+            }
         
             h2 {
                 font-size: 35px;
