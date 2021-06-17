@@ -91,6 +91,11 @@ body {
         padding-bottom: 25px;
         margin-top: 0 !important;
         color: $tertiary-color;
+        font-size: 40px;
+        
+        &:not(.about-section) {
+            text-shadow: 1px 1px 0 white;
+        }
     }
 }
 
