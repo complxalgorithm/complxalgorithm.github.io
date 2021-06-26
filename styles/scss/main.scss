@@ -79,6 +79,21 @@ body {
             border-color: #696969 !important;
         }
     }
+    
+    .btn-venmo {
+        background-color: #3d95ce;
+        
+        .venmo-logo {
+            background-image: url('https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;    
+        }
+        
+        &:hover {
+            background-color: white;    
+        }
+    }
     /* END SOCIAL ICONS STYLES */
 }
 
