@@ -21,6 +21,16 @@
     width: $width;  // for width of info div
 }
 
+@mixin social-icon-colors($main, $secondary) {  // set certain social button colors
+    background-color: $main;
+    color: $secondary;
+    
+    &:hover {
+        background-color: $secondary;
+        color: $main;
+        border-color: $secondary;        
+    }
+}
 
 // GENERAL LAYOUT STYLES
 html, body { overflow-x: hidden !important; } // remove horizontal scrolling
@@ -60,39 +70,11 @@ body {
     
     /* START SOCIAL ICONS STYLES */
     .btn-stackoverflow {
-        background-color: #F48024 !important;
-        color: white !important;
-        
-        &:hover {
-            background-color: white !important;
-            color: #F48024 !important;
-            border-color: white !important;    
-        }
+        @include social-icon-colors(#F48024, white);
     }
     
     .btn-vsco {
-        background-color: white !important;
-        
-        &:hover {
-            color: white !important;
-            background-color: #696969 !important;
-            border-color: #696969 !important;
-        }
-    }
-    
-    .btn-venmo {
-        background-color: #3d95ce;
-        
-        .venmo-logo {
-            background-image: url('https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;    
-        }
-        
-        &:hover {
-            background-color: white;    
-        }
+        @include social-icon-colors(#BD2121, white);
     }
     /* END SOCIAL ICONS STYLES */
 }
