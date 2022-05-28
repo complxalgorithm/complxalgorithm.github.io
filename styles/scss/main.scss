@@ -69,9 +69,6 @@ body {
     }
     
     /* START SOCIAL ICONS STYLES */
-    .btn-stackoverflow {
-        @include social-icon-colors(#F48024, white);
-    }
     
     .btn-vsco {
         @include social-icon-colors(#BD2121, white);
@@ -125,6 +122,11 @@ body {
                 h3 {
                     font-size: 22px;
                     color: $tertiary-color;
+                }
+                
+                h5 {
+                    font-size: 16px;
+                    color: #CA5656;    
                 }
                 
                 // nav
