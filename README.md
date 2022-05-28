@@ -7,4 +7,4 @@ general personal website
 * Bootstrap
 * GitHub Pages
 
-<footer>Copyright &copy; 2020-2021 Stephen C. Sanders. Licensed under the <a href="https://github.com/complxalgorithm/complxalgorithm.github.io/blob/master/LICENSE">MIT License</a>.</footer>
+<footer>Copyright &copy; 2020-2022 Stephen C. Sanders. Licensed under the <a href="https://github.com/complxalgorithm/complxalgorithm.github.io/blob/master/LICENSE">MIT License</a>.</footer>
