@@ -88,7 +88,7 @@ body {
         font-size: 40px !important;
         
         &:not(.about-header) {
-            text-shadow: 1.25px 1.25px 0 white;
+            text-shadow: 1.25px 1.25px 0 black;
         }
     }
 }
@@ -205,8 +205,6 @@ body {
 
 // PROJECTS SECTION STYLES
 .projects-section {
-    background-color: $primary-color;
-    
     .col-md-4 {
         @media screen and (min-width: 795px) {
             padding: 0 !important;
@@ -260,46 +258,22 @@ body {
     }
 }
 
-// CTA SECTION STYLES
-.cta-section {
-    @include background-img(url(../assets/img/cta.jpg), 600px);
-    
-    .cta-wrapper {
-        text-align: center; 
-    
-        .cta-info {
-            background-color: white;
-            opacity: 0.75;
-            border-radius: 25px;
-            display: inline-block;
-            padding: 10px;
-            @include transform-y(25%, 50%);
-            
-            @media screen and (max-width: 599px) {
-                @include transform-y(10%, 85%);    
-            }
-            
-            @media screen and (min-width: 600px) and (max-width: 991px) {
-                @include transform-y(15%, 85%);    
-            }
-        
-            h2 {
-                font-size: 35px;
-                color: $primary-color;
-                padding-bottom: 15px;
-            }
-        
-            p {
-                font-size: 25px;
-                color: black;
-                padding-bottom: 15px;
-            
-                a {
-                    font-size: 25px;    
-                }
-            }
-        }
+// GIS PROJECTS SECTION STYLES
+#gis-projects {
+    background-image: url(../assets/img/cta.jpg);
+       
+    .proj-header {
+        color: $primary-color !important;
     }
+    
+    h3 {
+        font-size: 20px;    
+    }
+}
+
+// OTHER PROJECTS SECTION STYLES
+#other-projects {
+    background-color: $primary-color;
 }
 
 // FOOTER SECTION STYLES
@@ -324,7 +298,7 @@ body {
 @media screen and (min-width: 380px) and (max-width: 569px) {
     .main-info {
         h1 {
-            font-size: 45px !important;    
+            font-size: 40px !important;    
         }
         
         h3 {

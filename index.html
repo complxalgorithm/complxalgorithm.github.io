@@ -46,10 +46,10 @@
                         <div class="nav-row">
                             <nav class="nav nav-pills">
                                 <li role="presentation" class="nav-item"><a href="#about-me">About Me</a></li>
-                                <li role="presentation" class="nav-item"><a href="#projects">Projects</a></li>
+                                <li role="presentation" class="nav-item"><a href="#gis-projects">Projects</a></li>
+                                <li role="presentation" class="nav-item"><a href="./assets/docs/scsanders-resume.pdf" target="_blank">Resume</a></li>
                                 <li role="presentation" class="nav-item"><a href="https://www.wikitree.com/wiki/Sanders-11855" target="_blank">Genealogy</a></li>
                                 <li role="presentation" class="nav-item"><a href="https://philpeople.org/profiles/stephen-c-sanders" target="_blank">Essays</a></li>
-                                <li role="presentation" class="nav-item"><a href="./assets/docs/scsanders-resume.pdf" target="_blank">Resume</a></li>
                             </nav>
                         </div>
                 
@@ -84,7 +84,7 @@
                 
                     <div class="col-md-6">
                         <div class="about-text">
-                            <p>I'm Stephen C. Sanders, and I am currently studying Geography &amp; Geospatial Technology at <a href="https://www.monroecc.edu" target="_blank" class="link">Monroe Community College</a>. In the past, I graduated from <a href="https://brockport.edu/" target="_blank" class="link">SUNY College at Brockport</a>, where I majored in Philosophy and minored in Anthropology. I have about half a year of experience using ArcGIS Pro, and have taken coursework in GIS, spatial analysis, physical geography, human geography, and world regional geography.</p>
+                            <p>I'm Stephen C. Sanders, and I am currently studying Geography &amp; Geospatial Technology at <a href="https://www.monroecc.edu" target="_blank" class="link">Monroe Community College</a>. In the past, I graduated from <a href="https://brockport.edu/" target="_blank" class="link">SUNY College at Brockport</a>, where I majored in Philosophy and minored in Anthropology. I have about half a year of experience using ArcGIS Pro, and have taken coursework in GIS, spatial analysis, physical geography, human geography, world regional geography, and Python programming.</p>
                             <p>I have over three years of experience as a web developer, mainly using WordPress, HTML5/CSS3 (SCSS, Bootstrap), JavaScript, a little PHP, and Git. I have also worked as a website administrator for multiple client websites.</p>
                             <p>The main activity in which I partake outside of GIS and web development is <a href="https://www.wikitree.com/genealogy/Sanders-Family-Tree-11855" target="_blank" class="link">genealogical research</a>. I have been researching my family tree for around four years. I enjoy research involving New York State, veterans of the American Civil War, <a href="https://en.wikipedia.org/wiki/Gottschee" target="_blank" class="link">Gottschee</a>, and Germany.</p>
                             <p>I am also an amateur philosopher; I have to put my philosophy degree to use somehow. I've written some <a href="https://philpeople.org/profiles/stephen-c-sanders" target="_blank" class="link">neat stuff</a> related to culture, society, and philosophical topics such as epistemology.</p>
@@ -94,11 +94,76 @@
             </div>
         </section>
         
-        <section id="projects" class="projects-section part">
+        <section id="gis-projects" class="projects-section part">
             <div class="container">
-                <h2 class="sec-header proj-header">Projects</h2>
+                <h2 class="sec-header proj-header">GIS Projects</h2>
                 
                 <div class="row">
+                    <div class="col-md-4">
+                        <div class="project">
+                            <div class="project-img">
+                                <a href="./assets/img/projs/the-digital-divide.png" target="_blank"><img src="./assets/img/projs/the-digital-divide.png" class="proj-img" /></a>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-title">
+                                    <h3>The Digital Divide - Identifying Suitable Sites for New Public WiFi Locations in Rochester, NY</h3>
+                                </div>
+                                <div class="project-years">
+                                    <h5 class="proj-yrs">Spring 2022</h5>
+                                </div>
+                                <div class="project-description">
+                                    <p class="proj-info">Determines potential sites for new public WiFi locations in the City of Rochester based on which census tracts were most in need. Considered percentage of households without internet access, proximity to a preexisting free WiFi location, and population density of school-aged people. Data analyzed in ArcGIS Pro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="project">
+                            <div class="project-img">
+                                <a href="./assets/img/projs/publicly-accessible-areas.png" target="_blank"><img src="./assets/img/projs/publicly-accessible-areas.png" class="proj-img" /></a>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-title">
+                                    <h3>Can Publicly Accessible Areas Alleviate Increasing Homicide Rates?</h3>
+                                </div>
+                                <div class="project-years">
+                                    <h5 class="proj-yrs">Intersession 2022</h5>
+                                </div>
+                                <div class="project-description">
+                                    <p class="proj-info">Investigates if there is a correlation between homicide rate, median household income level, and the number of parks, playgrounds, and other publicly accessible areas within census tracts of the City of Rochester. Data analyzed using ArcGIS Pro and Google Sheets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="other-projects" class="projects-section part">
+            <div class="container">
+                <h2 class="sec-header proj-header">Other Projects</h2>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project">
+                            <div class="project-img">
+                                <a href="https://github.com/complxalgorithm/numguess" target="_blank"><img src="./assets/img/projs/numguess-img.png" class="proj-img" /></a>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-title">
+                                    <h3>numguess</h3>
+                                </div>
+                                <div class="project-years">
+                                    <h5 class="proj-yrs">Jun 2022 - Present</h5>
+                                </div>
+                                <div class="project-description">
+                                    <p class="proj-info">Simple command line number guessing game written in Python. Keeps tracks and calculates a few statistics relevant to each session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-md-4">
                         <div class="project">
                             <div class="project-img">
@@ -138,7 +203,9 @@
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+                
+                <div class="row">
                     <div class="col-md-4">
                         <div class="project">
                             <div class="project-img">
@@ -152,14 +219,12 @@
                                     <h5 class="proj-yrs">Jul 2016 - Jun 2020</h5>
                                 </div>
                                 <div class="project-description">
-                                    <p class="proj-info">My old personal website was developed out of a desire not only to have a single place to put all of the information about me, but to practice designing and developing a website entirely on my own. This website was built using HTML/CSS, Bootstrap, and JS/jQuery, and was hosted using GitHub Pages.</p>
+                                    <p class="proj-info">My old personal website was developed out of a desire not only to have a single place to put all of the information about me, but to practice designing and developing a website entirely on my own. The first full website I ever devleoped. This website was built using HTML/CSS, Bootstrap, and JS/jQuery, and was hosted using GitHub Pages.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="row">
+                    
                     <div class="col-md-4">
                         <div class="project">
                             <div class="project-img">
@@ -202,26 +267,6 @@
                 <div class="row">
                     <div class="text-center">
                         <p class="proj-disclaim" style="color:white;font-size:1.5rem;padding-top:30px;">To see websites that I developed (or worked on in general) for previous employers, you can look at the links under the relevant experiences on my <a href="https://www.linkedin.com/in/stephencsanders" target="_blank" style="color:black !important;">LinkedIn</a> profile.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="cta" class="cta-section">
-            <div class="container">
-                <div class="row">
-                    <div class="cta-wrapper">
-                        <div class="cta-info">
-                            <h2>Do You Need a Website For Your Business?</h2>
-                            <p>I can design and develop a website for you that will not only look appealing, but will help your business acquire more customers/clients.</p>
-                            <script type="text/javascript">
-                                user = "scsandman6496";
-                                domain = "gmail.com";
-                                email = user + "@" + domain;
-                            
-                                document.write('<p><a class=\"btn btn-primary btn-lg\" href=\"mailto:' + email + '\">' + 'Contact Me' + '</a></p>');
-                            </script>
-                        </div>
                     </div>
                 </div>
             </div>
