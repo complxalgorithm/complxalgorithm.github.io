@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
         <link rel="stylesheet" href="styles/assets/bootstrap-social.css" />
+        
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <link href="styles/assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
         
@@ -99,6 +100,29 @@
                 <h2 class="sec-header proj-header">GIS Projects</h2>
                 
                 <div class="row">
+                    
+                    <div class="col-md-12">
+                        <div class="project">
+                            <div class="project-info">
+                                <div class="project-title">
+                                    <h3>MCC &amp; City of Traverse City Centerline QA/QC Project</h3>
+                                </div>
+                                <div class="project-years">
+                                    <h5 class="proj-yrs">Spring 2023</h5>
+                                </div>
+                                <div class="project-description">
+                                    <p class="proj-info">A systematic review of the city's centerline (road) GIS layer in relation to other datasets (e.g., Right of Way, parcels, County road data, aerial imagery) to flag issues or areas that need additional clarification. The main issues that needed to be marked are those concerning spatial accuracy, topology, dangles/gaps, missing data, and attribution. Any issue or anomaly was marked up using the provided mark-up layers with an issue type and comment, or they are identified in other output layers that would necessitate looking at certain field values to determine which features have certain issues (e.g., dangles/gaps, address continuity issues, railroad intersection points). The final deliverables will help the city assess the QA/QC after it has been delivered and make appropriate data changes to the Centerline layer.</p><br />
+                                    <p class="proj-info"></p>
+                                    <p class="proj-info">Included is a Python script that allows the user to intersect an input layer based on a specified field and field values with a polygon layer. An example usage is to figure out which City Local or Private roads intersect with the parcel data as a means of pinpointing issues pertaining to "Maintained By" attribution issues in the Centerline master layer. This is a fairly limited script that <i>requires</i> specifying the field (e.g., MAINTAS) and target values of the field (e.g., City Local, Private) from the input layer (e.g., the Centerline layer) that are to be intersected in relation to a polygon layer (e.g., Parcels). This script will be generalized and may be converted into an ArcGIS Pro toolbox at some point in the future.</p><br />
+                                    <p class="proj-info" style="color: black;"><b>This was my capstone experience/internship through Monroe Community College in collaboration with the City of Traverse City, Michigan.</b></p>
+                                </div>
+                            </div>
+                            <div class="project-img">
+                                <a href="#"><img src="./assets/img/projs/traverse-city.png" class="proj-img" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="col-md-4">
                         <div class="project">
                             <div class="project-img">
