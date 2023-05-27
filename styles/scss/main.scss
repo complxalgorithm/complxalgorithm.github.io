@@ -277,54 +277,6 @@ body {
         }
     }
     
-    /*
-    .col-md-4 {
-        @media screen and (min-width: 795px) {
-            padding: 0 !important;
-        }
-        
-        .project {
-            margin: 7.5px 5px;
-            background-color: white;
-            border: 1px solid black;
-            box-shadow: 2.5px 2.5px black;
-            border-radius: 15px;
-            
-            &:hover {
-                background-color: $secondary-color;
-                transition: 0.5s;
-                
-                .project-info {
-                    color: white !important;
-                    
-                    a {
-                        color: black !important;    
-                    }
-                }
-            }
-            
-            .project-img {
-                img.proj-img {
-                    width: 100%;
-                    border-bottom: 1px solid black;
-                    border-radius: 15px;
-                }
-            }
-            
-            .project-info {
-                margin: 15px 7.5px;
-                text-align: center;
-            
-                .project-description {
-                    .proj-info {
-                        margin: 0 !important;    
-                    }
-                }
-            }
-        }
-    }
-    */
-    
     .proj-disclaim {
         @media screen and (max-width: 794px) {
             margin: 0 15px;    
