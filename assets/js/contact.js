@@ -18,21 +18,14 @@ contactButton.addEventListener('click', () => {
 	// Set message
 	var message = "If you have any questions or professional inquiries, " 
 	message += "feel free to email me at " + "<a href=\"" + m + d + "\" style=\"color:#981A61 !important;\">" + d + "</a>.\n"
-	message += "Thank you!"
+	message += "While I am not actively looking for work, I am open to working on projects for small businesses.\n"
+	message += "In any case, I will respond to your message as soon as I can.\nThank you!"
 
-	// Create new Popup and set relevant information
+	// Create new Popup instance and set parameters
 	const Contact = new Popup({
     	id: "contact-popup",
-    	title: "Contact",
     	content: message,
-    	css: `
-    		@media screen and (max-width: 750px) {
-    		 	.popup-header {
-    		 		padding-top: 10px !important;
-    		 		margin-bottom: 10% !important;
-    		 	}
-    		 }
-    		 `,
+    	hideTitle: true
 	});
 
 	// Show the Contact pop-up
