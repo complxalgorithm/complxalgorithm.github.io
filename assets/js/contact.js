@@ -26,6 +26,13 @@ contactButton.addEventListener('click', () => {
     	id: "contact-popup",
     	title: "Contact",
     	content: message,
+    	css: `
+    		 @media screen and (max-screen: 750px) {
+    		 	.popup-title {
+    		 		padding-bottom: 15px;
+    		 	}
+    		 }
+    		 `,
 	});
 
 	// Show the Contact pop-up
