@@ -7,8 +7,8 @@
         <title>Stephen C. Sanders</title>
 
         <meta name="author" content="Stephen C. Sanders">
-        <meta name="description" content="Stephen C. Sanders is a Web Developer, Web Designer, and aspiring GIS Analyst based in Buffalo, New York who specializes in demographics data, cartography, WordPress, HTML/CSS/SCSS, and website administration.">
-        <meta name="keywords" content="GIS Analyst, ArcGIS Pro, QGIS, Python, web developer, web development, web design, Rochester, Buffalo, New York, HTML, CSS, SCSS, WordPress development, website administration">
+        <meta name="description" content="Stephen C. Sanders is a Data and GIS Analyst based in Buffalo, New York who specializes in demographics data, crime data, market data, and cartography.">
+        <meta name="keywords" content="GIS, GIS Analyst, data analyst, demographics, market research, ArcGIS Pro, QGIS, Python, web developer, web development, web design, Rochester, Buffalo, Brockport, New York, HTML, CSS, SCSS, WordPress development, website administration">
 
         <link rel="icon" type="image/jpg" href="assets/img/mi.jpg" />
         
@@ -21,17 +21,8 @@
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <link href="styles/assets/ie10-viewport-bug-workaround.css" rel="stylesheet">
         
-        <!-- Google Analytics -->
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-77261307-2', 'auto');
-        ga('send', 'pageview');
-
-        </script>
+        <!-- popup-js -->
+        <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
     </head>
     
     <body id="body">
@@ -67,6 +58,10 @@
                                 <a href="https://www.facebook.com/Scsandman4/" target="_blank" class="btn btn-social-icon btn-lg btn-facebook"><i class="fab fa-facebook"><span class="seo-icon">F</span></i></a>
                             </div>
                         </div>
+
+                        <div class="contact-row">
+                            <button class="btn btn-lg" id="contact-button">Contact</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,9 +81,9 @@
                     <div class="col-md-6">
                         <div class="about-text">
                             <p>I'm Stephen C. Sanders, and I am a data analyst. I completed an A.S. in Geography and Certificate in Geospatial Information Science and Technology at <a href="https://www.monroecc.edu" target="_blank" class="link">Monroe Community College</a>. Previously, I graduated from <a href="https://brockport.edu/" target="_blank" class="link">SUNY Brockport</a>, where I majored in Philosophy and minored in Anthropology.</p>
-                            <p>I have 1.5 years of experience using geographic information systems, especially ArcGIS Pro and QGIS. I have programmed in Python extensively in my work, and can use the ArcPy, Pandas, GeoPandas, and Matplotlib libraries. I also have four years of experience as a web developer, mainly using WordPress, HTML5/CSS3 (SCSS, Bootstrap), JavaScript, and Git. I have also worked as a website administrator for multiple client websites.</p>
+                            <p>I have 1.5 years of experience using geographic information systems, especially ArcGIS Pro and QGIS. I have programmed in Python extensively in my work, and can use the ArcPy, Pandas, GeoPandas, and Plotly libraries. In the past, I worked as a web developer for four years, mainly using WordPress, HTML5/CSS3 (SCSS, Bootstrap), JavaScript, and Git. I also acted as a website administrator for multiple client websites.</p>
                             <p>The main activity in which I partake outside of GIS is <a href="https://www.wikitree.com/genealogy/Sanders-Family-Tree-11855" target="_blank" class="link">genealogical research</a>. I have been researching my family tree for around five years. I enjoy research involving New York State, veterans of the American Civil War, <a href="https://en.wikipedia.org/wiki/Gottschee" target="_blank" class="link">Gottschee</a>, and Germany.</p>
-                            <p>I am also an amateur philosopher (I have to put my philosophy degree to use somehow). I've written some <a href="https://philpeople.org/profiles/stephen-c-sanders" target="_blank" class="link">neat stuff</a> related to culture, society, and philosophical topics such as epistemology.</p>
+                            <p>I am also an amateur philosopher (I have to put my philosophy degree to use somehow). I've written <a href="https://philpeople.org/profiles/stephen-c-sanders" target="_blank" class="link">some stuff</a> related to culture, society, and philosophical topics such as epistemology.</p>
                         </div>
                     </div>
                 </div>
@@ -370,7 +365,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         
-        <!-- Custom JS - mainly animations -->
+        <!-- Animate main information -->
         <script src="assets/js/script.js"></script>
+
+        <!-- Contact Module -->
+        <script src="assets/js/contact.js"></script>
     </body>
 </html>

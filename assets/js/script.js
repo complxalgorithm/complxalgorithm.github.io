@@ -1,4 +1,4 @@
-// File: scripts.js
+// File: script.js
 // Author: Stephen C Sanders <https://stephensanders.me>
 // License: MIT
 

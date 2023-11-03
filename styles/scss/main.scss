@@ -107,11 +107,18 @@ body {
             
             .main-info {
                 position: relative;
-                @include transform-y(55%, auto);
+                @include transform-y(40%, auto);
                 
-                @media screen and (max-width: 440px) {
-                    top: 30% !important;
+                @media screen and (max-width: 375px) {
+                    transform: translateY(20%) !important;
+                }
+
+                @media screen and (min-width: 376px) and (max-width: 400px) {
                     transform: translateY(30%) !important;
+                }
+
+                @media screen and (min-width: 401px) and (max-width: 475px) {
+                    transform: translateY(40%) !important;
                 }
                 
                 h1 {
@@ -171,6 +178,20 @@ body {
                         
                         svg {
                             margin-top: 5px;    
+                        }
+                    }
+                }
+
+                .contact-row {
+                    padding: 15px 0;
+
+                    button {
+                        color: white;
+                        background-color: $secondary-color;
+                        font-family: $main-font;
+
+                        &:hover {
+                            background-color: $primary-color;
                         }
                     }
                 }
@@ -313,7 +334,7 @@ body {
 }
 
 // MOBILE STYLES
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 390px) {
     .main-info {
         h3 {
             font-size: 16px !important;
@@ -321,7 +342,7 @@ body {
     }
 }
 
-@media screen and (min-width: 380px) and (max-width: 569px) {
+@media screen and (min-width: 391px) and (max-width: 569px) {
     .main-info {
         h1 {
             font-size: 40px !important;    
@@ -359,8 +380,8 @@ body {
 
 @media screen and (min-width: 1500px) {  // styles for larger monitors
     .main-info {
-        top: 75% !important;
-        transform: translateY(75%) !important;
+        top: 65% !important;
+        transform: translateY(65%) !important;
         
         h1 {
             font-size: 75px;    
