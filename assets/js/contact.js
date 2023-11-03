@@ -26,10 +26,8 @@ contactButton.addEventListener('click', () => {
     	title: "Contact",
     	content: message,
     	css: `
-    		 @media screen and (max-screen: 750px) {
-    		 	.popup-title {
-    		 		padding-bottom: 15px;
-    		 	}
+    		 .popup-header {
+    		 	margin-bottom: 10% !important;
     		 }
     		 `,
 	});
