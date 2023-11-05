@@ -23,6 +23,25 @@
         
         <!-- popup-js -->
         <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+
+        <!-- Fade In main-info section -->
+        <style>
+            .main-info {
+                animation: fadeInAnimation ease 4s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
     </head>
     
     <body id="body">
@@ -365,9 +384,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         
-        <!-- Animate main information -->
-        <script src="assets/js/script.js"></script>
-
         <!-- Contact Module -->
         <script src="assets/js/contact.js"></script>
     </body>
