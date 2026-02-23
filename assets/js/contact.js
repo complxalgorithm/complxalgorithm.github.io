@@ -1,6 +1,5 @@
 // File: contact.js
 // Author: Stephen C Sanders <https://stephensanders.me>
-// License: MIT
 
 // Target Contact button
 var contactButton = document.getElementById("contact-button");
