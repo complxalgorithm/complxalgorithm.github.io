@@ -6,5 +6,5 @@ general personal website
 * HTML5/SCSS
 * Bootstrap
 * GitHub Pages
-
+<br />
 <footer>Copyright &copy; 2020-2026 Stephen C. Sanders.
